@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register | LumaCart</title><link rel="stylesheet" href="css/style.css">
+</head>
+<body class="center-page">
+  <div class="auth-card">
+    <a class="brand" href="index.html"><span>✦</span> LumaCart</a>
+    <span class="eyebrow">JOIN LUMACART</span>
+    <h1>Create account</h1>
+    <p class="muted">Register to place orders and track deliveries.</p>
+    <form id="registerForm" class="form">
+      <label>Full name<input id="name" class="input" required placeholder="Your name"></label>
+      <label>Email<input id="email" class="input" type="email" required placeholder="you@example.com"></label>
+      <label>Password<input id="password" class="input" type="password" minlength="6" required placeholder="Minimum 6 characters"></label>
+      <button class="btn full" type="submit">Create Account</button>
+      <div id="message" class="message"></div>
+    </form>
+    <p class="switch">Already registered? <a href="login.html">Sign in</a></p>
+  </div>
+  <script src="js/common.js"></script>
+  <script src="js/register.js"></script>
+</body>
+</html>

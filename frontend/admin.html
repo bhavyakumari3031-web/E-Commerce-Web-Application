@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard | LumaCart</title><link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="navbar"><a class="brand" href="index.html"><span>✦</span> LumaCart</a><nav><a href="index.html">Shop</a><a class="active" href="admin.html">Admin</a></nav><div class="nav-actions"><span id="navUser" class="nav-user"></span><button id="logoutBtn" class="btn btn-small btn-ghost">Logout</button></div></header>
+  <main class="container section">
+    <div class="admin-head"><div><span class="eyebrow">CONTROL CENTER</span><h1>Admin dashboard</h1></div><button id="newProductBtn" class="btn">+ Add Product</button></div>
+    <section class="panel">
+      <div class="section-heading"><h2>Product management</h2></div>
+      <div class="table-wrap"><table><thead><tr><th>Product</th><th>Category</th><th>Price</th><th>Stock</th><th>Actions</th></tr></thead><tbody id="productTable"></tbody></table></div>
+    </section>
+
+    <section class="panel">
+      <h2>Order management</h2>
+      <div class="table-wrap"><table><thead><tr><th>Order</th><th>Customer</th><th>Total</th><th>Date</th><th>Status</th></tr></thead><tbody id="orderTable"></tbody></table></div>
+    </section>
+  </main>
+
+  <div id="productModal" class="modal hidden">
+    <div class="modal-card">
+      <button class="modal-close" id="closeModal">×</button>
+      <span class="eyebrow">PRODUCT</span><h2 id="modalTitle">Add product</h2>
+      <form id="productForm" class="form">
+        <input id="productId" type="hidden">
+        <label>Name<input id="pName" class="input" required></label>
+        <label>Description<textarea id="pDescription" class="input"></textarea></label>
+        <div class="two-col"><label>Price<input id="pPrice" class="input" type="number" step="0.01" required></label><label>Stock<input id="pStock" class="input" type="number" required></label></div>
+        <label>Category<select id="pCategory" class="input"><option>Fashion</option><option>Footwear</option><option>Accessories</option><option>Bags</option></select></label>
+        <label>Image URL<input id="pImage" class="input" placeholder="https://..."></label>
+        <button class="btn full" type="submit">Save Product</button>
+        <div id="productMessage" class="message"></div>
+      </form>
+    </div>
+  </div>
+  <script src="js/common.js"></script><script src="js/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LumaCart | E-Commerce</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="site-bg"></div>
+  <header class="navbar">
+    <a class="brand" href="index.html"><span>✦</span> LumaCart</a>
+    <nav>
+      <a class="active" href="index.html">Shop</a>
+      <a href="orders.html" data-auth-link>Orders</a>
+      <a href="admin.html" data-admin-link class="hidden">Admin</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="cart-pill" href="cart.html">🛒 <span id="cartCount">0</span></a>
+      <span id="navUser" class="nav-user"></span>
+      <a id="loginLink" class="btn btn-small" href="login.html">Login</a>
+      <button id="logoutBtn" class="btn btn-small btn-ghost hidden">Logout</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-copy">
+        <span class="eyebrow">CURATED • SIMPLE • MODERN</span>
+        <h1>Everything you need.<br><span>One beautiful cart.</span></h1>
+        <p>Discover everyday products with a clean shopping experience, secure login, quick checkout and live order tracking.</p>
+        <a href="#products" class="btn">Explore Products →</a>
+      </div>
+      <div class="hero-card">
+        <div class="hero-orb">✦</div>
+        <p>Featured collection</p>
+        <h3>New season essentials</h3>
+        <span>Fresh picks • Limited stock</span>
+      </div>
+    </section>
+
+    <section id="products" class="container section">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">OUR COLLECTION</span>
+          <h2>Shop the essentials</h2>
+        </div>
+
+      </div>
+      <div id="productGrid" class="product-grid"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div><strong>LumaCart</strong> — Thiranex Task 3 E-Commerce Web Application</div>
+    <div>HTML • CSS • JavaScript • Node.js • Express • MySQL</div>
+  </footer>
+
+  <script src="js/common.js"></script>
+  <script src="js/products.js"></script>
+</body>
+</html>

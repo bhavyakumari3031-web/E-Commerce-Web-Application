@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout | LumaCart</title><link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="navbar"><a class="brand" href="index.html"><span>✦</span> LumaCart</a><nav><a href="index.html">Shop</a><a href="cart.html">Cart</a></nav><div class="nav-actions"><a id="loginLink" class="btn btn-small" href="login.html">Login</a><button id="logoutBtn" class="btn btn-small btn-ghost hidden">Logout</button></div></header>
+  <main class="container section checkout-layout">
+    <div>
+      <span class="eyebrow">SECURE CHECKOUT</span><h1>Complete your order</h1>
+      <form id="checkoutForm" class="panel form">
+        <label>Delivery address<textarea id="address" class="input" required placeholder="House / street / city / state"></textarea></label>
+        <label>Phone number<input id="phone" class="input" required placeholder="10-digit mobile number"></label>
+        <button class="btn full" type="submit">Place Order</button>
+        <div id="message" class="message"></div>
+      </form>
+    </div>
+    <aside id="summary" class="panel"></aside>
+  </main>
+  <script src="js/common.js"></script><script src="js/checkout.js"></script>
+</body>
+</html>
