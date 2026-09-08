@@ -1,4 +1,4 @@
-const API = "https://e-commerce-web-application-ad2n.onrender.com";
+const API = "https://e-commerce-web-application-ad2n.onrender.com/api";
 
 function getToken() {
   return localStorage.getItem("token");
